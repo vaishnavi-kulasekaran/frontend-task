@@ -1,0 +1,201 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YouTube</title>
+        <meta charset="{% static 'utf-8' %}">
+        <link rel="stylesheet" type="{% static 'text/css' %}" href="{% static 'reset.css' %}">
+        <link rel="stylesheet" type="{% static 'text/css' %}" href="{% static 'main.css' %}">
+        <meta name="{% static 'viewport' %}" content="{% static 'width=device-width, initial-scale=0.6' %}">
+    </head>
+    <body>
+        <div class="{% static 'wrapper' %}">
+            <header>
+                <div class="{% static 'header__logo' %}">
+                    <a href="{% static '#' %}">
+                        <img src="{% static 'images/header/hamburger.png' %}" alt="navigation button" class="header__hamburger-logo">
+                    </a>
+                    <a href="{% static '#' %}">
+                        <img src="{% static 'images/header/yt-logo.png' %}" alt="YouTube logo" class="header__yt-logo">
+                    </a>
+                </div>
+                <div class="{% static 'search' %}">
+                    <form>
+                        <input type="text" name="search" id="search__input" placeholder="Search">
+                        <a href="{% static '#' %}">
+                            <img src="{% static 'images/header/search.png' %}" alt="Search Icon" class="search__icon">
+                        </a>
+                    </form>
+                </div>
+                <div class="{% static 'header__icons header__logo' %}">
+                    <a href="{% static '#' %}">
+                        <img src="{% static 'images/header/grid.png' %}" alt="grid icon" class="header__icons--grid">
+                    </a>
+                    <a href="{% static '#' %}">
+                        <img src="{% static 'images/header/upload.png' %}" alt="grid icon" class="header__icons--upload">
+                    </a>
+                    <a href="{% static '#' %}">
+                        <img src="{% static 'images/header/bell.png' %}" alt="grid icon" class="header__icons--bell">
+                    </a>
+                    <a href="{% static '#' %}">
+                        <img src="{% static 'images/header/profile-placeholder.png' %}" alt="grid icon" class="header__icons--profile">
+                    </a>
+                </div>
+            </header>
+            <div class="{% static 'main-wrapper' %}">
+                <div class="left"></div>
+                <main>
+                    <div class="main__video">
+                        <div class="main__video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_1lj6JaDKCA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="{% static 'main__description' %}">
+                            <p>Steph Curry & DeMarcus Postgame Interview - Game 2 | Warriors vs Raptos | 2019 NBA Finals</p>
+                            <p>290,399 views</p>
+                            <a href="{% static '#' %}">
+                                <img src="{% static 'images/describe-icons.jpg' %}" alt="describe-icons" >
+                            </a>
+                        </div>
+                        <div class="main__sub-description">
+                            <a href="{% static '#' %}">
+                                <img class="main__name" src="{% static 'images/describe-name.jpg' %}" alt="name">
+                            </a>
+                            <a href="{% static '#' %}">
+                                <img class="main__subscriptions" src="{% static 'images/subscribed.jpg' %}" alt="subscriptions">
+                            </a>
+                            <p>Stephen A. Smith gives his best sales pitch for Kevin Durant to sign with the New York Knicks ahead of 2019 NBA free agency, saying KD would get whatever he desired courtesy of James Dolan..</p>
+                        </div>
+                        <div class="{% static 'main__more' %}">
+                            <a href="{% static '#' %}" >
+                                <p>SHOW MORE</p>
+                            </a>
+                        </div>
+                    </div>
+                    <aside class="{% static 'aside' %}">
+                        <div class="{% static 'aside__top-container' %}">
+                            <p>Up next</p>
+                            <a href="{% static '#' %}">AUTOPLAY</a>
+                        </div>
+                        <a href="{% static '#' %}" class="{% static 'first-img-aside' %}">
+                            <img src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="{% static 'aside__video' %}" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                         <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <a href="{% static '#' %}" >
+                            <img  class="aside__video" src="{% static 'images/aside-pic.jpg' %}" alt="Next video">
+                        </a>
+                        <div class="aside__more">
+                            <a href="{% static '#' %}">SHOW MORE</a>
+                        </div>
+                    </aside>
+
+                    <section>
+                        <div>
+                            <div class="section__comments">
+                                <p>6,806 Comments</p>
+                            </div>
+                            <div class="section__sort-container">
+                                <a href="{% static '#' %}">
+                                    <img src="{% static 'images/sort.jpg' %}" alt="sort comments">
+                                    <p>SORT BY</p>
+                                </a>
+                            </div>
+                            <div class="section__profile">
+                                <img src="{% static 'images/profile_icon.png' %}" alt="profile_icon"> 
+                            </div>
+                            <div class="input__container">
+                                <form>
+                                    <input type="text" name="comment" id="comment" value="Add a public comment...">
+                                </form>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comments">
+                                <img src="{% static 'images/profile_icon.png' %}" alt="profile icon" width="50">
+                                <p class="comments__name">John Snow <a href="{% static '#' %}">10 months ago</a> </p>
+                                <p class="comments__comment">Stephen A will do anything he possibly can to get KD on the Knicks 😂.</p>
+                                <div class="likes">
+                                    <a href="{% static '#' %}">
+                                        <img src="{% static 'images/like.jpg' %}" alt="like">
+                                    </a>
+                                    <p class="comments__text">1K</p>
+                                    <a href="{% static '#' %}">
+                                        <img src="{% static 'images/dislike.jpg' %}" alt="dislike">
+                                    </a>
+                                    <a href="{% static '#' %}" class="comments__text">REPLY</a>
+                                </div>
+                                <a href="{% static '#' %}" class="comments_replies">View all 7 replies</a>
+                            </div>
+                            <div class="comments">
+                                <img src="{% static 'images/profile_icon.png' %}" alt="profile icon" width="50">
+                                <p class="comments__name">Arya Stark <a href="{% static '#' %}">10 months ago</a> </p>
+                                <p class="comments__comment">Stephen A will do anything he possibly can to get KD on the Knicks 😂.</p>
+                                <div class="likes">
+                                    <a href="{% static '#' %}">
+                                        <img src="{% static 'images/like.jpg' %}" alt="like">
+                                    </a>
+                                    <p class="comments__text">1K</p>
+                                    <a href="{% static '#' %}">
+                                        <img src="{% static 'images/dislike.jpg' %}" alt="dislike">
+                                    </a>
+                                    <a href="{% static '#' %}" class="comments__text">REPLY</a>
+                                </div>
+                                <a href="{% static '#' %}" class="comments_replies">View all 7 replies</a>
+                            </div>
+                            <div class="comments">
+                                <img src="{% static 'images/profile_icon.png' %}" alt="profile icon" width="50">
+                                <p class="comments__name">Tyrion Lannister <a href="{% static '#' %}">10 months ago</a> </p>
+                                <p class="comments__comment">Stephen A will do anything he possibly can to get KD on the Knicks 😂.</p>
+                                <div class="likes">
+                                    <a href="{% static '#' %}">
+                                        <img src="{% static 'images/like.jpg' %}" alt="like">
+                                    </a>
+                                    <p class="comments__text">1K</p>
+                                    <a href="{% static '#' %}">
+                                        <img src="{% static 'images/dislike.jpg' %}" alt="dislike">
+                                    </a>
+                                    <a href="{% static '#' %}" class="comments__text">REPLY</a>
+                                </div>
+                                <a href="{% static '#' %}" class="comments_replies">View all 7 replies</a>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
